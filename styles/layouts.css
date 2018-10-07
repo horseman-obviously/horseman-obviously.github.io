@@ -132,8 +132,7 @@ footer {
 		 
 	}
 #license_img {
-	display: initial;
-	text-align: center;
+	margin: 1em;
 }
 
 img {
