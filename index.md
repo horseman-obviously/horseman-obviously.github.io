@@ -3,7 +3,7 @@ title:
 layout: default
 ---
 
-![FFEM]({{ site.url }}/assets/images/CoverImage-01-01.jpg)
+![FFEM]({{ site.url }}/images/CoverImage-01-01.jpg)
 
 [Foundation for Environmental Monitoring (ffem)](http://ffem.io), is a [nonprofit (Section 8) company](https://en.wikipedia.org/wiki/Non-profit_laws_of_India#Section-8_Company) based in Bangalore, India.
 
