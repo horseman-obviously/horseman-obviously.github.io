@@ -125,10 +125,10 @@ footer {
 	}*/
 } 			
 
-#licensing {
+#license {
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
+		align-items: center;
 		 
 	}
 #license_img {
