@@ -106,18 +106,23 @@ footer {
 	.content {
 		font-size: 1em;
 	}
-	#contactInfo {
+	#contact {
 		margin-top: 10px;
 	}
-	#licensing {
+	#license {
 	text-align: center;
+	line-height: 1.2;	
 }
-	#licensing {
-		/*display: flex;
-		flex-direction: row;*/
+	#terms {
+	text-align: center;
+	line-height: 1.2;	
+}
+	/*#licensing {
+		display: flex;
+		flex-direction: row;
 		text-align: center;
-		line-height: 1.2; 
-	}
+		 
+	}*/
 } 			
 
 
