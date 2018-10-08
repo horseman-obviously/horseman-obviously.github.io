@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ page.title }} | {{ site.name }}</title>
+      <!--<link rel="stylesheet" href="{{ site.url }}/styles/screen.css" media="screen and (min-width: 1000px)">
+      <link rel="stylesheet" href="{{ site.url }}/styles/handheld.css" media="screen and (min-width: 400px) and (max-width: 1000px)">
+	Delete once site works without edge cases-->
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?">
+    <link rel = "stylesheet" type = "text/css" href = "{{ site.url }}/styles/layouts.css">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">		  
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var u = "{{ site.url }}{{ page.url }}";
+        $(document).ready(function(){
+          $("nav a").each(function(index){
+            if($(this).attr("href") == u){
+              $(this).addClass("active");
+            }
+          });
+        });
+    </script>
+  </head>
+
+  <body>
+    <!--<div id="container">
+      <div id="headerNav">
+	Delete once site works without edge cases-->
+	<nav id="sidenav" class="sidenav">
+    		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  		<a class = "dropdown-btn" href="{{ site.url }}/about/">About</a>
+  		<a href="#">Products</a>
+  		<a href="#">Services</a>
+  		<a href="#">Research</a>
+  		<a href="#">Blog</a>
+  		<a href="#">Contact</a>
+ 	</nav>  
+        <header>
+	    <span style="font-size:30px;cursor:pointer" id = "hambutton" onclick="openNav()">&#9776;</span>
+	    <span class = "dummy">foundation for environmental monitoring</span> <!--Dummy element: used for centering other elements in the flexbox-->
+            <div id="siteLogo">
+                <a href="{{ site.url }}"><img src="{{ site.url }}/images/logo.png" alt="FFEM Logo"></a>
+            </div>
+	    <span style="font-size:30px;cursor:pointer" onclick="openNav()"; class="dummy">&#9776;</span> <!--Dummy element: used for centering other elements in the flexbox-->
+	    <span>foundation for environmental monitoring</span>	
+        </header>
+        <!--<nav id="primary_nav_wrap">
+          <a href="#" id="menuIcon"></a>
+          <div id="navContainer">
+            <ul>
+                <li><a href="{{ site.url }}/about/">About</a>
+                    <ul>
+                        <li><a href="{{ site.url }}/team/">Team</a></li>
+                        <li><a href="{{ site.url }}/partners/">Partners</a></li>
+                        <li><a href="{{ site.url }}/work/">Work with us</a></li>
+                    </ul>
+                </li>
+                <li><a href="{{ site.url  }}/products/">Products</a>
+                    <ul>
+                        <li><a href="{{ site.url }}/water/">Water</a></li>
+                        <li><a href="{{ site.url }}/soil/">Soil</a></li>
+                    </ul>
+                </li>
+                <li><a href="{{ site.url }}/shop/">Shop</li>
+                <li><a href="{{ site.url }}/services/">Services</a></li>
+                <li><a href="{{ site.url }}/research/">Research</li>
+                <li><a href="{{ site.url }}/blog/">Blog</a></li>
+                <li><a href="{{ site.url }}/contact/">Contact</a></li>
+            </ul>
+          </div>
+        </nav>-->
+      <!--</div>-->
+      <article>
+	   <div class = "content">   
+		    <h2>{{ page.title }}</h2>
+          <p>Posted by <strong>{{ page.author }}</strong> on <em>{{ page.date }}</em></p>
+          <p><a href="{{ site.url }}/blog/">All blog posts</a></p>
+          {{ content }}
+          <p><a href="{{ site.url }}/blog/">All blog posts</a></p>
+	      </div>	   
+      </article>
+      <footer>
+          <div id="contact">
+              <p>Foundation for Environmental Monitoring (ffem)<br>#67 (old 125), 2nd Floor, Infantry Road, Bangalore 560001, India<br><a href="mailto:info@ffem.io">info@ffem.io</a> +91 80 4814 4892 <a href="http://ffem.io">ffem.io</a></p>
+          </div>
+	  <div id="terms">
+            <a href="{{ site.url }}/privacy/">Privacy Policy</a>
+          </div>
+	  		  
+          <div id="license">
+	       <div id = "license_img">    
+	  	<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
+	      </div>
+		<div>  
+              This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+		  </div>	
+          </div>    
+      </footer>
+    <!--</div>-->
+	<script src = "{{ site.url }}/scripts.js"></script>  
+  </body>
+</html>
+			
