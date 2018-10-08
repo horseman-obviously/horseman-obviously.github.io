@@ -25,7 +25,9 @@ header {
 				margin-right: auto;
 				font-family: 'Helvetica', sans serif;
 			}
-
+h2 {
+	font-family: 'Open Sans', sans serif;
+}
 #cover_image {
   				max-width: 100%;
   				display: block;
