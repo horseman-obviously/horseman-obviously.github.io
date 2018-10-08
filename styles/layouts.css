@@ -56,7 +56,7 @@ h2 {
 
 }
 
-.sidenav a {
+.sidenav a, .dropdown-btn {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
@@ -64,10 +64,21 @@ h2 {
     display: block;
     transition: 0.3s;
     font-family: 'Roboto', sans serif;
+	width:100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
 }
 
-.sidenav a:hover {
+.sidenav a:hover, .dropdown-btn:hover {
     color: #f1f1f1;
+	
+}
+
+.dropdown-container {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
 }
 
 .sidenav .closebtn {
