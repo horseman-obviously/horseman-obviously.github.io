@@ -27,6 +27,8 @@ header {
 			}
 h2 {
 	font-family: 'Open Sans', sans serif;
+	font-weight: 100;
+	
 }
 #cover_image {
   				max-width: 100%;
