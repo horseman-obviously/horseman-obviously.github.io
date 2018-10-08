@@ -19,7 +19,7 @@ function closeNav() {
     document.getElementById("hambutton").style.visibility = "initial";
 }
 
-var dropdown = document.getElementsByClassName("dropdown-btn");
+/*var dropdown = document.getElementsByClassName("dropdown-btn");
 var i;
 
 for (i = 0; i < dropdown.length; i++) {
@@ -32,4 +32,4 @@ for (i = 0; i < dropdown.length; i++) {
       dropdownContent.style.display = "block";
     }
   });
-}
+}*/
