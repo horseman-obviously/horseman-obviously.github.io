@@ -23,9 +23,9 @@
   </head>
 
   <body>
-    <div id="container">
-      <div id="headerNav">
-	<!--Delete once site works without edge cases-->
+    
+      <!--<div id="headerNav">
+	Delete once site works without edge cases-->
 	<nav id="sidenav" class="sidenav">
     		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 		<a href="{{ site.url }}/about/">About</a>
@@ -39,7 +39,8 @@
   		<a href="#">Research</a>
   		<a href="{{ site.url }}/blog/">Blog</a>
   		<a href="#">Contact</a>
- 	</nav>  
+ 	</nav>
+	  <div id="container">
         <header>
 	    <span style="font-size:30px;cursor:pointer" id = "hambutton" onclick="openNav()">&#9776;</span>
 	    <span class = "dummy">foundation for environmental monitoring</span> <!--Dummy element: used for centering other elements in the flexbox-->
@@ -74,7 +75,7 @@
             </ul>
           </div>
         </nav>-->
-	  </div>
+	  <!--</div>-->
       <article>
 	   <div class = "content">   
 		   <h2>{{ page.title }}</h2>
