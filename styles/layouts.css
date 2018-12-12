@@ -88,6 +88,7 @@ h2 {
     font-size: 36px;
     margin-left: 50px;
     color: #818181;
+    left: 8vw;
 }
 
 @media screen and (max-height: 450px) {
@@ -138,6 +139,9 @@ footer {
 		text-align: center;
 		 
 	}*/
+	.sidenav.closebtn {
+		left: 60vw;
+	}
 } 			
 
 #license {
@@ -155,4 +159,8 @@ img {
   display: block;
   height: auto;
 
+}
+
+#team {
+	max-width: 25%;
 } 

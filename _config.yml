@@ -1,2 +1,6 @@
 name: Foundation for Environmental Monitoring
+
+include: ['_pages']
+
+relative_permalinks: false
 #markdown: kramdown Commented out until I know what it is

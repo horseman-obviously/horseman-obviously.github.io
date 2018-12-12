@@ -27,13 +27,19 @@
       <div id="headerNav">
 	Delete once site works without edge cases-->
 	<nav id="sidenav" class="sidenav">
-    		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  		<a class = "dropdown-btn" href="{{ site.url }}/about/">About</a>
-  		<a href="#">Products</a>
-  		<a href="#">Services</a>
-  		<a href="#">Research</a>
-  		<a href="#">Blog</a>
-  		<a href="#">Contact</a>
+    	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="{{ site.url }}/about/">About</a>
+        <a href="{{ site.url }}/team/">Team</a>
+        <a href="{{ site.url }}/partners/">Partners</a>
+        <a href="{{ site.url }}/work/">Work with us</a>
+        <a href="{{ site.url }}/products/">Products</a>
+        <a href="{{ site.url }}/water/">Water</a>
+        <a href="{{ site.url }}/soil/">Soil</a>
+        <a href="#">Shop</a>
+        <a href="{{ site.url }}/services/">Services</a>
+        <a href="{{ site.url }}/research/">Research</a>
+        <a href="{{ site.url }}/blog/">Blog</a>
+        <a href="{{ site.url }}/contact/">Contact</a>
  	</nav>  
         <header>
 	    <span style="font-size:30px;cursor:pointer" id = "hambutton" onclick="openNav()">&#9776;</span>
@@ -44,32 +50,7 @@
 	    <span style="font-size:30px;cursor:pointer" onclick="openNav()"; class="dummy">&#9776;</span> <!--Dummy element: used for centering other elements in the flexbox-->
 	    <span>foundation for environmental monitoring</span>	
         </header>
-        <!--<nav id="primary_nav_wrap">
-          <a href="#" id="menuIcon"></a>
-          <div id="navContainer">
-            <ul>
-                <li><a href="{{ site.url }}/about/">About</a>
-                    <ul>
-                        <li><a href="{{ site.url }}/team/">Team</a></li>
-                        <li><a href="{{ site.url }}/partners/">Partners</a></li>
-                        <li><a href="{{ site.url }}/work/">Work with us</a></li>
-                    </ul>
-                </li>
-                <li><a href="{{ site.url  }}/products/">Products</a>
-                    <ul>
-                        <li><a href="{{ site.url }}/water/">Water</a></li>
-                        <li><a href="{{ site.url }}/soil/">Soil</a></li>
-                    </ul>
-                </li>
-                <li><a href="{{ site.url }}/shop/">Shop</li>
-                <li><a href="{{ site.url }}/services/">Services</a></li>
-                <li><a href="{{ site.url }}/research/">Research</li>
-                <li><a href="{{ site.url }}/blog/">Blog</a></li>
-                <li><a href="{{ site.url }}/contact/">Contact</a></li>
-            </ul>
-          </div>
-        </nav>-->
-      <!--</div>-->
+        
       <article>
 	   <div class = "content">   
 		    <h2>{{ page.title }}</h2>
