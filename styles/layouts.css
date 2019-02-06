@@ -1,5 +1,5 @@
 header {
-    display: flex;
+    display: flex!important;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
@@ -99,7 +99,7 @@ h2 {
 
 
 footer {
-				display: flex;
+				display: flex!important;
 				flex-direction: row;
 				justify-content: space-between;
 				/*background-color: #535353;*/
@@ -163,4 +163,72 @@ img {
 
 #team {
 	max-width: 25%;
-} 
+}
+
+.instagram{ 
+  background: #f09433; 
+background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  }
+
+.shop-container {
+	display: flex;
+	flex-direction: row;
+}
+
+.shop-images {
+	border: 1px solid #e67300;
+	border-radius: 25px;
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: .5s ease;
+  backface-visibility: hidden;	
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  /*height: 100%;*/
+  
+	margin: 10px;
+	min-width: 200px;
+	max-height: 200px;
+}
+
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .shop-images {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.description {
+	margin-bottom: 10px; 
+	color: #323232;
+	font-size: 16px;
+}
+
+.text {
+  background-color: #e67300 !important; 
+  border-radius: 25px !important;
+  color: #f1f1f1 !important;
+  font-size: 16px;
+  padding: 16px 32px;
+}

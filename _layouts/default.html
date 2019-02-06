@@ -9,7 +9,19 @@
     <link rel = "stylesheet" type = "text/css" href = "{{ site.url }}/styles/layouts.css">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">		  
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700" rel="stylesheet">
+
+    <link rel = "stylesheet" href = "https://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.css">
+    <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js"></script>
+    <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-aria.min.js"></script>
+    <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-messages.min.js"></script>
+    <script src = "https://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.js"></script>
+
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    
     <script type="text/javascript">
         var u = "{{ site.url }}{{ page.url }}";
         $(document).ready(function(){
@@ -23,8 +35,19 @@
   </head>
 
   <body>
+    <md-content>
   <!--<div id="headerNav">
 	Delete once site works without edge cases-->
+    <div id="fb-root"></div>
+    <script>
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
 	   <nav id="sidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 		    <a href="{{ site.url }}/about/">About</a>
@@ -34,11 +57,12 @@
   	    <a href="{{ site.url }}/products/">Products</a>
         <a href="{{ site.url }}/water/">Water</a>
         <a href="{{ site.url }}/soil/">Soil</a>
-        <a href="#">Shop</a>
+        <a href="{{ site.url }}/shop/">Shop</a>
   	    <a href="{{ site.url }}/services/">Services</a>
   	    <a href="{{ site.url }}/research/">Research</a>
   	    <a href="{{ site.url }}/blog/">Blog</a>
   	    <a href="{{ site.url }}/contact/">Contact</a>
+        <a href="{{ site.url }}/socialMedia/">Social Media</a>
  	   </nav>
 	  <div id="container">
         <header>
@@ -100,7 +124,11 @@
           </div>    
       </footer>
     </div>
-	<script src = "{{ site.url }}/scripts.js"></script>  
+	<script src = "{{ site.url }}/scripts.js"></script>
+  <script src = "{{ site.url }}/invoice.js"></script>
+  </md-content>  
   </body>
 </html>
 			
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
